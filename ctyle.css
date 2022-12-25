@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vw;
+    width: 100%;
+    font-family: PT serif;
+}
+.main {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    margin: 100px auto 0px;
+    flex: 0 0 33.33%;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin-right: 50px;
+    margin-left: -20px;
+}
+
+.inner__card{
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease-out;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+.inner__card.is-flipped{
+transform:rotateY(180deg);
+}
+.inner__card-middle.is-flipped{
+    transform:rotateY(180deg);
+}
+.inner__card-senior.is-flipped{
+    transform:rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;   
+    overflow: scroll;
+    box-shadow: 0px 4px 12px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 1rem;
+}
+.card__face-front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__face-front h2{
+    font-size: 3rem;
+}
+.card__face-junior {
+    color:#b8a291;
+    background: linear-gradient(135deg, #cdeb8b 0%,#d6dd85 100%);
+    /* background-color: rgb(247, 227, 136); */
+}
+.card__face-middle{
+    color: #6da2a0;
+    background: linear-gradient(135deg, #f9c667 0%,#f9e022 100%);
+    /* background-color: rgb(102, 170, 88);  */
+}
+.card__face-senior{
+    color: #333332;
+    background: linear-gradient(135deg, #cc0000 0%,#e55000 100%);
+    /* background-color: rgb(25, 27, 25);  */
+}
+
+
+.card__face-back {
+    transform: rotateY(180deg);
+}
+.back__content-junior {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.back__head {
+    color: rgb(36, 36, 36);
+    background-color: #afd8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 22px 12px -6px rgba(34, 60, 80, 0.53);
+}
+
+.back__title {
+    flex: 0 0 130px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    justify-self:start;
+    margin-right: 2rem;
+    letter-spacing: 1px
+    }
+.back__bar{
+    height:1.5rem;
+    width: 1.5rem;
+    border-radius:50%;
+    background-color: rgb(194, 247, 178);
+    margin-right: 1rem;
+}
+.back__bar-first-junior {
+    background-color: rgb(194, 247, 178);
+    }
+.back__bar-second-junior {
+    background-color: rgb(230, 232, 232);
+    }
+.back__bar-third-junior {
+    background-color: rgb(230, 232, 232);
+    }
+
+
+.back__bar-first-middle {
+background-color: rgb(252, 209, 123);
+}
+.back__bar-second-middle {
+background-color: rgb(252, 209, 123);
+}
+
+.back__bar-first-senior {
+background-color: rgb(253, 121, 107);
+}
+.back__bar-second-senior {
+background-color: rgb(253, 121, 107);
+}
+.back__bar-third-senior {
+background-color: rgb(253, 121, 107);
+}
+
+
+.back__body {
+    color: rgb(27, 27, 27);
+    text-align: left;
+    background-color: #faf9f9;
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 125%;
+    padding: 1.3rem;
+    width: 100%;
+    height: 100vh;
+    }
+
+/*=========Media================================*/
+
+
+    @media(max-width:1172px){
+        .main{
+            max-width: 950px;
+        }
+    }
+    
+    @media(max-width:1132px){
+        .main{
+            max-width: 900px;
+        }
+        .back__bar{
+        height:1.5rem;
+        width: 1.5rem;
+        margin-right: 1rem;
+        }
+        .back__title {
+        flex: 0 0 90px;
+        font-size: 1.1rem;
+        justify-self:start;
+        margin-right: 2rem;
+        letter-spacing: 1px
+        }
+        .back__body {
+            font-size: 1rem;
+            line-height: 1.3rem;
+            }
+    }
+    @media(max-width:1030px){
+        .main{
+            max-width: 800px;
+        }
+        .back__bar{
+        height:1.5rem;
+        width: 1.5rem;
+        }
+        .back__title {
+        flex: 0 0 70px;
+        font-size: 1rem;
+        margin-right: 2rem;
+        letter-spacing: 1px
+        }
+        .back__body {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding: 1.2rem;
+        }
+    }
+    @media(max-width:930px){
+        .main{
+            max-width: 750px;
+        }
+        .back__bar{
+        height:1.2rem;
+        width: 1.2rem;
+        margin-right: 0.6rem;
+        }
+        .back__title {
+        flex: 0 0 60px;
+        font-size: 1rem;
+        justify-self:start;
+        margin-right: 2rem;
+        letter-spacing: 1px
+        }
+        .back__body {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 1.2rem;
+        }
+    }
+    @media(max-width:820px){
+        .main{
+            max-width: 650px;
+        }
+        .back__bar{
+        height:1.2rem;
+        width: 1.2rem;
+        margin-right: 0.6rem;
+        }
+        .back__title {
+        flex: 0 0 60px;
+        font-size: 0.85rem;
+        justify-self:start;
+        margin-right: 1.4rem;
+        letter-spacing: 1px
+        }
+        .back__body {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        padding: 1.1rem;
+        }
+    }
+    @media(max-width:750px){
+        body{
+            min-height: 1800px;
+            width: 100%;
+        }
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .card__face h2{
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+        }
+        .card {
+            flex: 0 0 70%;
+            margin: 60px auto 0;
+            width: 400px;
+        }
+        .back__head {
+            height: 90px;
+        }
+        .back__bar{
+            height:1.8rem;
+            width: 1.8rem;
+            }
+            .back__title {
+            flex: 0 0 200px;
+            font-size: 1.3rem;
+            margin-right: 1.2rem;
+            }
+            .back__body {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            }
+    }
+    @media(max-width:470px){
+        body{
+            min-height: 2050px;
+            width: 100%;
+        }
+        .card__face h2{
+            font-size: 4rem;
+            letter-spacing: 0.15rem;
+        }
+        .card {
+            flex: 0 0 60%;
+            margin: 50px auto 0;
+            width: 300px;
+        }
+        .back__head {
+            height: 70px;
+        }
+        .back__bar{
+            height:1.4rem;
+            width: 1.4rem;
+            }
+            .back__title {
+            flex: 0 0 150px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-right: 1.2rem;
+            }
+            .back__body {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            letter-spacing: 0.4px;
+            }
+    }
