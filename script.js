@@ -8,7 +8,7 @@ for (i = 0; i < backsArr.length; i++){
     let text = textArr[i].innerText;
     let textLength = text.split('').length;
     if (textLength > 350){
-    backsArr[i].style.overflow = 'scroll'
+    backsArr[i].style.overflow = 'auto'
     }
     if(textLength < 350){
     backsArr[i].style.overflow = 'hidden'

@@ -88,6 +88,7 @@ transform:rotateY(180deg);
 
 .card__face-back {
     transform: rotateY(180deg);
+    
 }
 
 .back__content-junior {
@@ -115,13 +116,13 @@ justify-content: center;
     font-size: 1.2rem;
     justify-self:start;
     margin-right: 2rem;
+    margin-right: 4.2vh;
     letter-spacing: 1px
     }
 .back__bar{
     height:1.5rem;
     width: 1.5rem;
     border-radius:50%;
-    background-color: rgb(194, 247, 178);
     margin-right: 1rem;
 }
 .back__bar-first-junior {
@@ -157,12 +158,12 @@ background-color: rgb(253, 121, 107);
     color: rgb(27, 27, 27);
     text-align: left;
     background-color: #faf9f9;
-    display: block;
+    display: flex;
     font-size: 1.1rem;
     line-height: 125%;
     padding: 1.3rem;
     width: 100%;
-    height: 100vh;
+    min-height: 400px;
     }
 
 /*=========Media================================*/
@@ -323,8 +324,8 @@ background-color: rgb(253, 121, 107);
             }
             .back__body {
             font-size: 1.2rem;
-            line-height: 1.2rem;
-            letter-spacing: 0.4px;
+            line-height: 1.26rem;
+            letter-spacing: 0.3px;
             }
     }
     @media(max-width:380px){
