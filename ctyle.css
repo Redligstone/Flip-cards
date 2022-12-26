@@ -172,6 +172,18 @@ background-color: rgb(253, 121, 107);
         .main{
             max-width: 950px;
         }
+        .back__title {
+            flex: 0 0 90px;
+            font-size: 1.1rem;
+            justify-self:start;
+            margin-right: 2rem;
+            letter-spacing: 1px
+            }
+        .back__bar{
+            height:1.5rem;
+            width: 1.5rem;
+            margin-right: 1rem;
+            }
     }
     
     @media(max-width:1132px){
