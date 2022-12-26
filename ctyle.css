@@ -54,7 +54,7 @@ transform:rotateY(180deg);
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;   
-    overflow: hidden;
+    overflow: auto;
     box-shadow: 0px 4px 12px 0px rgba(34, 60, 80, 0.3);
     border-radius: 1rem;
 }
@@ -154,17 +154,22 @@ background-color: rgb(253, 121, 107);
 }
 
 
-.back__body {
-    color: rgb(27, 27, 27);
-    text-align: left;
-    background-color: #faf9f9;
-    display: flex;
-    font-size: 1.1rem;
-    line-height: 125%;
-    padding: 1.3rem;
-    width: 100%;
-    min-height: 600px;
+.back__body p{
+    
+    
     }
+    .back__body{
+        color: rgb(27, 27, 27);
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 125%;
+        display:flex;
+        width: 100%;
+        height: 100%;
+        padding: 1.3rem;    
+        
+    }
+    
 
 /*=========Media================================*/
 
@@ -309,7 +314,7 @@ background-color: rgb(253, 121, 107);
     }
     @media(max-width:470px){
         body{
-            min-height: 1700px;
+            min-height: 1500px;
             width: 100%;
         }
         .card__face h2{

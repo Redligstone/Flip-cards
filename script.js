@@ -4,16 +4,6 @@ const backsArr = [...backs];
 const textBody = document.querySelectorAll('.back__body');
 const textArr = [...textBody]
 
-for (i = 0; i < backsArr.length; i++){
-    let text = textArr[i].innerText;
-    let textLength = text.split('').length;
-    if (textLength > 350){
-    backsArr[i].style.overflow = 'auto'
-    }
-    if(textLength < 350){
-    backsArr[i].style.overflow = 'hidden'
-    }
-}
 card.addEventListener('click', function(){
     card.classList.toggle('is-flipped');    
 })
