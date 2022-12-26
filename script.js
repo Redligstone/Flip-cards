@@ -15,9 +15,7 @@ for (i = 0; i < backsArr.length; i++){
     }
 }
 card.addEventListener('click', function(){
-    card.classList.toggle('is-flipped');
-    
-    
+    card.classList.toggle('is-flipped');    
 })
 
 const cardMidlle = document.querySelector('.inner__card-middle');
