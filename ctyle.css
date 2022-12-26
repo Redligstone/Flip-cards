@@ -163,7 +163,7 @@ background-color: rgb(253, 121, 107);
     line-height: 125%;
     padding: 1.3rem;
     width: 100%;
-    min-height: 400px;
+    min-height: 600px;
     }
 
 /*=========Media================================*/
@@ -274,7 +274,7 @@ background-color: rgb(253, 121, 107);
             letter-spacing: 0.2rem;
         }
         .card {
-            flex: 0 0 70%;
+            flex: 0 0 60%;
             margin: 60px auto 0;
             width: 400px;
         }
@@ -305,7 +305,7 @@ background-color: rgb(253, 121, 107);
             letter-spacing: 0.15rem;
         }
         .card {
-            flex: 0 0 60%;
+            flex: 0 0 50%;
             margin: 50px auto 0;
             width: 300px;
         }
@@ -324,7 +324,7 @@ background-color: rgb(253, 121, 107);
             }
             .back__body {
             font-size: 1.2rem;
-            line-height: 1.26rem;
+            line-height: 1.33rem;
             letter-spacing: 0.3px;
             }
     }
